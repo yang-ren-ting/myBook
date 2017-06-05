@@ -1,2 +1,8 @@
-测试
+测试____
+
+
+```
+rootPage:any = TabsPage;
+```
+
 
