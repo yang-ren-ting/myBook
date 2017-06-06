@@ -29,7 +29,6 @@
 }
 ```
 - React Router 
-    很多教程router都是这样的
 ```javascript
   import { Router, Route, hashHistory } from 'react-  router';
 
