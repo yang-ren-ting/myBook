@@ -28,9 +28,25 @@
   }
 }
 ```
-- React Router 
+- React Router <br>
+开始写的如下代码，一直hashHistory报错;
 ```javascript
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, hashHistory } from 'react-router';
+render((
+  <Router history={hashHistory}>
+    <Route path="/" component={App}/>
+  </Router>,
+), document.getElementById('app'));
+```
+查阅资料后才知道，react-router 更新到了4.0，很多API已经不一样了。history 被纳入了 react-router-dom 文件下的 HashRouter、BrowserRouter等。
+因此，写法也改变了，如下：
+```javascript
+  import { BrowserRouter, Route } from 'react-router-dom'ReactDOM.render(
+  <BrowserRouter>
+       <Route path="/" component={App}/>
+  </BrowserRouter>,
+  document.body.appendChild(document.createElement('div'))
+);
 ```
 
 
