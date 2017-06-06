@@ -3,7 +3,7 @@
 2.使用了阮大神的react，webapck脚手架https://github.com/ruanyf/react-babel-webpack-boilerplate;
 3.遇到的问题
 ```javascript
-
+    var  
 ```
 
 
