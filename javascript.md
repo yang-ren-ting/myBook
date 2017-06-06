@@ -30,7 +30,13 @@
 ```
 - React Router 
 ```javascript
-  import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, hashHistory } from 'react-router';
+  doclick = () => {
+    this.setState({
+      liked: 'bbb'
+    })
+  };
+
 ```
 
 
