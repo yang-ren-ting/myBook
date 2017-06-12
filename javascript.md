@@ -48,8 +48,6 @@ render((
   document.body.appendChild(document.createElement('div'))
 );
 ```
-##javascript
-ddddd
 
 
 
