@@ -1,5 +1,5 @@
 ###TabNavigator的运用
-```
+`
 const Home = TabNavigator({
   Chat: {
     screen: Chat,
@@ -39,4 +39,4 @@ const Home = TabNavigator({
       },
     },
   });
-```
+`
