@@ -41,7 +41,7 @@ Home.navigationOptions = {
 ```
 这是最基本的TabNavigator的使用，然而，这样写的话代码重复太多，并且不便于维护，所以我们将最通用的属性navigationOptions 进行了封装
 ```
-onst TabOptions = (tabBarTitle,normalImage,olderColor,headTitle) => {
+onst TabOptions = (tabBarTitle,normalImage,tintColor,headTitle) => {
     const tabBarLabel = tabBarTitle;
     const tabBarIcon = (({tintColor,focused})=> {
         return(
@@ -62,5 +62,5 @@ onst TabOptions = (tabBarTitle,normalImage,olderColor,headTitle) => {
 ```
 下面我们写tab的navigationOptions属性直接这样即可
 ```
- navigationOptions: ()=> TabOptions(tabs.chat.title,TABS.chat.imgUrl,colorStyle.dark),
+ navigationOptions: ()=> TabOptions('titile','图片路径','图片颜色','导航标题')。
 ```
