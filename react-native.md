@@ -60,4 +60,7 @@ onst TabOptions = (tabBarTitle,normalImage,olderColor,headTitle) => {
     return {tabBarLabel,tabBarIcon,headerTitle,headerTitleStyle,headerStyle,tabBarVisible};
 };
 ```
-下面  
+下面我们写tab的navigationOptions属性直接这样即可
+```
+ navigationOptions: ()=> TabOptions(tabs.chat.title,TABS.chat.imgUrl,colorStyle.dark),
+```
