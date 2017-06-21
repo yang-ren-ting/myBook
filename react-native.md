@@ -47,11 +47,11 @@ onst TabOptions = (tabBarTitle,normalImage,olderColor,headTitle) => {
         return(
             <Image
                 source={normalImage}
-                style={[styles.tabBarIcon, {tintColor: !focused?olderColor:'green'}]}
+                style={[styles.tabBarIcon, {tintColor: focused}]}
             />
         )
     });
-    const headerTitle = !headTitle? '微Q' :headTitle;
+    const headerTitle = headTitle;
     const headerTitleStyle = {fontSize:16,color:'white',alignSelf:'center'};
     // header的style
     const headerStyle = {backgroundColor:'#999'};
@@ -60,3 +60,4 @@ onst TabOptions = (tabBarTitle,normalImage,olderColor,headTitle) => {
     return {tabBarLabel,tabBarIcon,headerTitle,headerTitleStyle,headerStyle,tabBarVisible};
 };
 ```
+下面  
