@@ -1,4 +1,4 @@
-项目
+项目地址:https://github.com/yang-ren-ting/AwesomeProject
 ###TabNavigator的运用
 ```
 const Home = TabNavigator({
